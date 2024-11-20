@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Historial de Productos Vendidos</title>
+  </head>
+  <body>
+    <header>
+      <nav class="menu-principal">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/login/">Login</a></li>
+          <li><a href="/register">Register</a></li>
+          <li>
+            <a href="#">Products</a>
+            <ul class="sub-menu-principal">
+              <li><a href="/agregar-producto/">Agregar producto</a></li>
+              <li><a href="/productos-vendidos/">Productos vendidos</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <nav class="menu-movil">
+        <ul>
+          <li>
+            <a href="#">MENU</a>
+            <ul class="sub-menu">
+              <li><a href="/">Home</a></li>
+              <li><a href="/login/">Login</a></li>
+              <li><a href="/register">Register</a></li>
+              <li>
+                <a href="#">Products</a>
+                <ul class="sub-menu-movil">
+                  <li><a href="/agregar-producto/">Agregar producto</a></li>
+                  <li><a href="/productos-vendidos/">Productos vendidos</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1 class="text-center">Historial de Productos Vendidos</h1>
+    <label for="filtrar">Filtrar por :</label>
+    <select name="filtrar" id="filtrar">
+      <option value="seleccionar..." selected>Seleccionar...</option>
+      <option value="vendedor">Vendedor</option>
+      <option value="producto">Producto</option>
+      <option value="Fecha">Fecha</option>
+      <option value="Categoria">Categoría</option>
+      <option value="cliente">Cliente</option>
+    </select>
+    <table class="ancho-texto">
+      <thead>
+        <tr>
+          <th>ID Venta</th>
+          <th>Vendedor</th>
+          <th>Fecha de Venta</th>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          <th>Precio Unitario</th>
+          <th>Total</th>
+          <th>Cliente</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Aquí se insertarán los productos vendidos -->
+        <tr>
+          <td>1</td>
+          <td>Urbano shop</td>
+          <td>2024-03-01</td>
+          <td>Producto 1</td>
+          <td>2</td>
+          <td>$100</td>
+          <td>$200</td>
+          <td>Juan Pérez</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>La gran locura</td>
+          <td>2024-03-15</td>
+          <td>Producto 2</td>
+          <td>3</td>
+          <td>$200</td>
+          <td>$600</td>
+          <td>Maria Rodríguez</td>
+        </tr>
+        <!-- ... -->
+      </tbody>
+    </table>
+  </body>
+</html>

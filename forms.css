@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.formulario {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas */
+  gap: 16px; /* Espaciado entre los elementos */
+  width: 40%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column; /* Hace que el label esté encima del input */
+  width: 45%; /* Ocupa aproximadamente la mitad del ancho */
+}
+
+.form-group-full {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Ocupa toda la fila */
+}
+
+textarea {
+  resize: vertical; /* Permite ajustar la altura del textarea */
+}
